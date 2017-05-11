@@ -1,0 +1,7 @@
+CFLAGS += -O2 -Wall
+
+all: main
+hello.o: hello.c hello.h
+	gcc -o $@ -c $< $(CFLAGS)
+main: main.c hello.o
+	gcc -o $@ $^ $(CFLAGS)
