@@ -1,7 +1,11 @@
 CFLAGS += -O2 -Wall
 
-all: main
+.PHONY: all
+all: main install
+
 hello.o: hello.c hello.h
 	gcc -o $@ -c $< $(CFLAGS)
 main: main.c hello.o
 	gcc -o $@ $^ $(CFLAGS)
+install: main
+	cp main /usr/local/bin
