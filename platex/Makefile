@@ -4,5 +4,5 @@ all: ictseminar.pdf
 .tex.dvi:
 	platex $^
 	platex $^
-.dvi.pdf:
+%.pdf: %.dvi
 	dvipdfmx $^
