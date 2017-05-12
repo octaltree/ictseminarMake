@@ -1,6 +1,10 @@
 # make HOGE=hello
-.PHONY: all echo
+.PHONY: all echo decorator
 all: echo
 
 echo:
 	echo $(HOGE)
+decorator:
+	-! :
+	@echo hoge
+	@-echo foo| grep bar
