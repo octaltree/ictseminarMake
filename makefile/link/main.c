@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include "hoge.h"
+#include "dir2/hoge.h"
 
 int main(void){
   char buf[5];
