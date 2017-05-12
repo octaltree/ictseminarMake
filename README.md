@@ -1,13 +1,6 @@
 # GNU Make ゼミ
-makeでつくられたgitの管理から外れるファイルはgit clean -dfxで消える
+## 中身
+Makefile文法についてのデモがmakefile/に, autotoolsやcmake等Makefileを生成するツールのデモがgen/にある(未来完了形).
 
-## helloworld
-your first make
-## hello
-依存関係と変数など
-## MakefileVar
-コマンドライン引数による変数
-## platex
-サフィックスルール, 静的パターンルール
-## bp
-関数とマクロ
+## 余談
+make等でつくられたgitの管理から外れるファイルは, git clean -dfxで消える.
