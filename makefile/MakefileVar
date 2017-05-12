@@ -1,5 +1,5 @@
 # make HOGE=hello
-.PHONY: all echo decorator
+.PHONY: all echo decorator shell
 all: echo
 
 echo:
@@ -8,3 +8,5 @@ decorator:
 	-! :
 	@echo hoge
 	@-echo foo| grep bar
+shell:
+	echo $$0
