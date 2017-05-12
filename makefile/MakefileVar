@@ -10,3 +10,4 @@ decorator:
 	@-echo foo| grep bar
 shell:
 	echo $$0
+	echo $$PATH
