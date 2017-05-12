@@ -1,3 +1,4 @@
+# make HOGE=hello
 .PHONY: all echo
 all: echo
 
