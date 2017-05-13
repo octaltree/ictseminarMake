@@ -5,3 +5,5 @@ Makefile.amを書く
 aclocalで必要なマクロを用意
 autoconf configure.acからconfigure
 autoheader configure.acからconfig.h.in
+AC_CONFIG_FILES([Makefile])がconfigure.acから抜けていたので足す
+automake --add-missingでMakefile.amとconfigrure.acからMakefile.in
